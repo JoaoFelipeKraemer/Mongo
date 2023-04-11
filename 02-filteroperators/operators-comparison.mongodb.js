@@ -45,4 +45,7 @@ use('school');
 db.inventory.find({ quantidade: { $nin: [ 25, 15 ] } } )
 // O operador $nin seleciona os documentos em que o valor do atributo filtrado não 
 // é igual ao especificado no array, ou o campo não existe.
+// Essa consulta seleciona todos os documentos da coleção inventory em que o valor do atributo 
+// quantidade é diferente de 5 e 15. Esse resultado também inclui os documentos em que 
+// o atributo quantidade não existe.
 
